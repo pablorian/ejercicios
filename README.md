@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+// Todo
+* Como usuario, cuando clickeo en ausente sobre el alumno dicho boton se ponga en rojo y
+guarde el estado ausente de dicha fecha de ese usuario
+
+* Como usuario, cuando clickeo en presente sobre el alumno dicho boton se ponga en verde y
+guarde el estado presente de dicha fecha de ese usuario

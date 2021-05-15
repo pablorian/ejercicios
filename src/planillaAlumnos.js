@@ -11,6 +11,7 @@ class PlanillaAlumnos extends React.Component {
 
   constructor(props) {
     super(props);
+    console.log('esta es la fecha seleccionada', this.props.fecha);
     this.state = {
       alumnos: this.alumnos.map((alumno) => <p>
         {alumno.nombre}
@@ -29,6 +30,9 @@ class PlanillaAlumnos extends React.Component {
   }
 
   render() {
+    // Todo
+    //  de acuerdo a la fecha seleccionada y al estado guardado
+    //  debemos cambiar el color del boton activado
     return (
       <div>
         <h1>Alumnos</h1>
@@ -56,6 +60,7 @@ class Persona {
 
 class Alumno extends Persona {
 
+  // Podes utilizar este array para guardar los datos
   asistencia = [];
 
   constructor(_nombre) {
@@ -63,7 +68,9 @@ class Alumno extends Persona {
   }
 
   setPresencia(value) {
-
+    // Todo setPresencia()
+    //  Aqui deberiamos darle la inteligencia a la
+    //  clase alumno para que guarde el estado de acuerdo a la fecha
   }
 
 }
