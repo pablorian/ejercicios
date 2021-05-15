@@ -63,6 +63,7 @@ class Alumno extends Persona {
   }
 
   setPresencia(value) {
+
   }
 
 }

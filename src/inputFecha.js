@@ -10,6 +10,7 @@ class InputFecha extends React.Component {
     this.state = {
       fecha: this.fechaMoment.format('ll'),
     };
+    this.props.onSetFecha(this.fechaMoment);
   }
 
   render() {
@@ -27,6 +28,7 @@ class InputFecha extends React.Component {
     this.setState(state => ({
       fecha: this.fechaMoment.format('ll')
     }));
+    this.props.onSetFecha(this.fechaMoment);
   }
 
   irAdelante() {
@@ -34,52 +36,8 @@ class InputFecha extends React.Component {
     this.setState(state => ({
       fecha: this.fechaMoment.format('ll')
     }));
+    this.props.onSetFecha(this.fechaMoment);
   }
 };
 
 export default InputFecha;
-
-// class Persona {
-//
-//   nombre = "";
-//   asistencia = [];
-//
-//   constructor(_nombre) {
-//     this.nombre = _nombre;
-//   }
-//
-//   comoMeLlamo() {
-//     console.log('mi nombre es', this.nombre)
-//   }
-// }
-//
-// class Profesor extends Persona {
-//
-//   autoridad = "profesor"
-//
-//   constructor(_nombre) {
-//     super(_nombre);
-//   }
-//
-//   comoMeLlamo() {
-//     super.comoMeLlamo();
-//     console.log("soy Alumno");
-//   }
-// }
-//
-// class Alumno extends Persona {
-//
-//   constructor(_nombre) {
-//     super(_nombre);
-//   }
-//
-//   comoMeLlamo() {
-//     super.comoMeLlamo();
-//     console.log("soy Alumno");
-//   }
-//
-// }
-// const persona1 = new Profesor('Pablo')
-// persona1.comoMeLlamo()
-// const persona2 = new Alumno('Gringo')
-// persona2.comoMeLlamo()
